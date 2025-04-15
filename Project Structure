@@ -1,0 +1,13 @@
+realtime-ai-engine/  
+├── src/  
+│   ├── engine.cpp          # Core inference loop  
+│   ├── simd_math.cpp       # AVX2/NEON optimized ops  
+│   └── wasm/              # Emscripten build  
+├── bindings/  
+│   ├── python/            # pybind11 wrapper  
+│   └── javascript/        # WASM API  
+├── models/  
+│   └── tinybert.onnx      # Sub-millisecond NLP model  
+└── benchmarks/  
+    ├── latency_test.py    # vs. Python PyTorch  
+    └── hft_simulator.cpp  # Trading bot demo  
